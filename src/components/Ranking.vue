@@ -270,7 +270,7 @@ export default {
         const cM = this.getRanking.matchDays[l].users
 
         cM.forEach((element, i) => {
-          cM[i].average = Math.round(element.points / l)
+          cM[i].average = Math.floor(element.points / (this.getRanking.matchDays.length))
           const user = this.getRanking.users.filter((user) => user.id === element.userId)
           if (user.length === 1) {
 
