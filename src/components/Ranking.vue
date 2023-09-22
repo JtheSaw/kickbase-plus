@@ -230,7 +230,7 @@ export default {
     },
     chartOptions: {
       default: {
-        responsive: false,
+        responsive: true,
         scales: {
           yAxes: [{
             ticks: {
@@ -240,7 +240,7 @@ export default {
         }
       },
       reverse: {
-        responsive: false,
+        responsive: true,
         scales: {
           yAxes: [{
             ticks: {
